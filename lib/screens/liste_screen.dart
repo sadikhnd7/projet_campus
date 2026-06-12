@@ -114,7 +114,6 @@ class _ListeScreenState extends State<ListeScreen> {
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         children: [
-          // Chip "Tout"
           Padding(
             padding: const EdgeInsets.only(right: 8),
             child: FilterChip(

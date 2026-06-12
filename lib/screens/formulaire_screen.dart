@@ -1,11 +1,3 @@
-// ============================================================
-// ÉCRAN 3 : Formulaire création / modification (StatefulWidget)
-// - Mode création : aucun argument passé
-// - Mode édition  : Annonce passée en argument
-// - Validation des champs avant sauvegarde
-// Fichier : lib/screens/formulaire_screen.dart
-// ============================================================
-
 import 'package:flutter/material.dart';
 import '../data/donnees.dart';
 import '../models/annonce.dart';
