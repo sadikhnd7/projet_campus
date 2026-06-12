@@ -16,6 +16,8 @@ class BourseApp extends StatelessWidget {
     return MaterialApp(
       title: 'Bourse Campus',
       debugShowCheckedModeBanner: false,
+
+    
       theme: ThemeData(
         brightness: Brightness.dark,
         scaffoldBackgroundColor: const Color(0xFF0F0F0F),
@@ -45,14 +47,14 @@ class BourseApp extends StatelessWidget {
         ),
 
         // Cards
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           color: const Color(0xFF1A1A1A),
           elevation: 2,
           shadowColor: Colors.black54,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(14),
             side: BorderSide(
-              color: Colors.white.withOpacity(0.05),
+              color: Colors.white.withValues(alpha: 0.05),
               width: 1,
             ),
           ),
@@ -68,7 +70,7 @@ class BourseApp extends StatelessWidget {
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: BorderSide(
-              color: Colors.white.withOpacity(0.08),
+              color: Colors.white.withValues(alpha: 0.08),
               width: 1,
             ),
           ),
@@ -118,7 +120,6 @@ class BourseApp extends StatelessWidget {
           elevation: 4,
         ),
 
-        // FilterChips
         chipTheme: ChipThemeData(
           backgroundColor: const Color(0xFF2A2A2A),
           selectedColor: const Color(0xFF4CAF50),
@@ -127,13 +128,13 @@ class BourseApp extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
-            side: BorderSide(color: Colors.white.withOpacity(0.1)),
+            side: BorderSide(color: Colors.white.withValues(alpha: 0.1)),
           ),
           showCheckmark: false,
         ),
 
         // AlertDialog
-        dialogTheme: const DialogTheme(
+        dialogTheme: const DialogThemeData(
           backgroundColor: Color(0xFF1A1A1A),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(16)),

@@ -49,7 +49,7 @@ class Annonce {
   final String id;
   String objet;
   Categorie categorie;
-  int prix; // en FCFA
+  int prix; 
   EtatObjet etat;
   bool vendu;
 
@@ -62,7 +62,6 @@ class Annonce {
     this.vendu = false,
   });
 
-  
   String prixFormate() {
     if (prix >= 1000) {
       final milliers = prix ~/ 1000;

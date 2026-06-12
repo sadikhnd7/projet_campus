@@ -1,8 +1,4 @@
-// ============================================================
-// WIDGET RÉUTILISABLE : BadgeEtat (StatelessWidget)
-// Affiche un badge coloré selon l'état de l'objet
-// Fichier : lib/widgets/badge_etat.dart
-// ============================================================
+
 
 import 'package:flutter/material.dart';
 import '../models/annonce.dart';

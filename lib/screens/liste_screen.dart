@@ -99,7 +99,7 @@ class _ListeScreenState extends State<ListeScreen> {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () async {
           await Navigator.pushNamed(context, '/formulaire');
-          setState(() {}); 
+          setState(() {}); // Rafraîchir après ajout
         },
         icon: const Icon(Icons.add),
         label: const Text('Nouvelle annonce'),
@@ -114,6 +114,7 @@ class _ListeScreenState extends State<ListeScreen> {
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         children: [
+          // Chip "Tout"
           Padding(
             padding: const EdgeInsets.only(right: 8),
             child: FilterChip(

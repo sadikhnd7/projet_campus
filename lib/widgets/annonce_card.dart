@@ -1,9 +1,3 @@
-// ============================================================
-// WIDGET RÉUTILISABLE : AnnonceCard (StatelessWidget)
-// Carte d'affichage d'une annonce avec badge "Vendu"
-// Fichier : lib/widgets/annonce_card.dart
-// ============================================================
-
 import 'package:flutter/material.dart';
 import '../models/annonce.dart';
 import 'badge_etat.dart';
@@ -22,7 +16,6 @@ class AnnonceCard extends StatelessWidget {
         margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
         child: Stack(
           children: [
-            // Contenu principal
             Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
@@ -80,7 +73,6 @@ class AnnonceCard extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 14),
-                  // Pied : prix + badge état
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -101,7 +93,6 @@ class AnnonceCard extends StatelessWidget {
               ),
             ),
 
-            // Badge "VENDU" en overlay coin supérieur droit
             if (annonce.vendu)
               Positioned(
                 top: 0,
